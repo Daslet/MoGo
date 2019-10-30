@@ -842,9 +842,20 @@ hr {
     background-color: #f8f8f8;
 }
 .footor__inner {
+    display: flex;/*и 123 перешло в право*/
+    justify-content:space-between;/*расстояние между блоками*/
     padding-bottom: 65px;
-
 }
+.footer__col--first {
+    width: 40%;/*первый блок шириной 40%*/
+}
+.footer__col--second {
+    width: 29%;/*второй блок шириной 29%*/
+}
+.footer__col--third {
+    width: 22%;/*третий блок шириной 22%*/
+}
+
 .footor__logo {
     margin-bottom: 30px;
 
@@ -902,6 +913,7 @@ hr {
 
      background: #fff;
      border: 1px solid #e7e7e7;
+     border-right: 0;
 
      font-family: 'Montserrat', sans-serif;
      margin: 0px;
@@ -911,6 +923,10 @@ hr {
      font-style: italic;
      font-weight: 300;
  }
+ .Subscribe__input:focus {
+    outline: 0;
+    border-color: #95e1d3;;
+}
 .Subscribe__input::placeholder {
     color: #ccc;
 }
@@ -930,4 +946,13 @@ hr {
      font-weight: 700;
      color: #fff;
      text-transform: uppercase;
+
+     transition: background .2s linear;
     }
+    .Subscribe__btn:hover {
+        background-color: #74c7b8;
+    }
+    .Subscribe__btn:focus {
+        outline: 0;
+    }
+    
